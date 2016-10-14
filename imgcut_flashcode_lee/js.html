@@ -1,0 +1,22 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FLASH与JS交互</title>
+<script language="JavaScript">
+     function sendToJavaScript(value,value2) {
+         document.forms["form1"].output.value += "\n" + "接收到flash的参数: " + value+ "接收: " + value2;
+     }
+</script>
+</head>
+<body>
+     <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="700" height="400"
+             >
+         <param name="movie" value="new.swf?id=226" /> 
+</object>
+     <form name="form1" onsubmit="return false;">
+         <textarea cols="60" rows="20" name="output" readonly="true">Initializing...</textarea>
+     </form>
+</body>
+</html>
+
